@@ -77,7 +77,7 @@ job1 = "Teacher";
 // very bad Practice
 lastName = "Doe";
 console.log(lastName);
-*/
+
 
 // Basic Operator, Math Operator
 
@@ -110,3 +110,69 @@ console.log(isFullAge);
 
 console.log(18 > 18);
 console.log(18 >= 18);
+*/
+
+////////////////////////////////////////////////////////////////////////
+// Day - 2
+
+/*
+// Operator Precedence
+const now = 2024;
+const ageSneha = 2024 - 2005;
+const ageNeha = 2024 - 2004;
+
+console.log(now - 1991 > now - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10, x = 10
+console.log(x, y);
+
+const averageAge = ageNeha + ageSneha / 2;
+console.log(ageNeha, ageSneha, averageAge);
+*/
+
+/*
+// Strings and template literals
+const firstName = "Bhavya";
+const job = "teacher";
+const birthYear = 2001;
+const year = 2024;
+
+const bhavya =
+  "I'm " + firstName + ", a " + (year - birthYear) + "Years old " + job + "!";
+console.log(bhavya);
+
+const bhavyaNew = `I'm ${firstName}, a ${year - birthYear} Years old ${job} !`;
+console.log(bhavyaNew);
+console.log(`Just a regular String.....`);
+console.log(
+  "String with \n\
+  multiple \n\
+  lines"
+);
+console.log(`String
+  multiple 
+  lines`);
+
+
+// if else
+
+const age = 15;
+const isOldEnough = age >= 18;
+if (isOldEnough) {
+  console.log("Sarah Can start driving license");
+} else {
+  const yearLeft = 18 - age;
+  console.log(`Sarah is too young. wait another ${yearLeft} years :)`);
+}
+
+const birthYear = 2012;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+*/
