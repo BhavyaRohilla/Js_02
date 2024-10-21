@@ -176,3 +176,182 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 */
+
+//////////////////////////////////////////////////////////////
+// day - 3
+
+/*
+// Type conversion
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Neha"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// Type coercion
+console.log("I am " + 23 + " years old!!");
+console.log("23" - "10" - 3);
+console.log("23" / "2");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+console.log(2 + 3 + 4 + "5");
+console.log("10" - "4" - "3" - 2 + "5");
+*/
+
+/*
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean({}));
+
+const money = 0;
+if (money) {
+  console.log("Don't spend it all :)");
+} else {
+  console.log("You should get a job!!!");
+}
+
+let height;
+if (height) {
+  console.log("Yay! Height is defined");
+} else {
+  console.log("Height is undefined");
+}
+*/
+
+/*
+// Equality Operator
+let age = 18;
+if (age === 18) {
+  console.log("You just became an adult :D (strict)");
+}
+
+age = "18";
+
+if (age == 18) {
+  console.log("You just became an adult :D (loose)");
+}
+
+const favourite = Number(prompt("What's your favourite number ?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  console.log("Cool! 23 is an amazing number!");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number!");
+} else {
+  console.log("Number is not 23 or 7");
+}
+*/
+
+/*
+// Logical Operator
+
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if (hasDriversLicense && hasGoodVision) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("Someone else should drive......");
+}
+
+const isTired = true;
+console.log(hasDriversLicense && hasGoodVision && isTired);
+*/
+
+/*
+// Switch case
+const day = "wednesday";
+
+switch (day) {
+  case "monday":
+    console.log("Plan couse structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thrusday":
+    console.log("Write Code Example");
+    break;
+  case "friday":
+    console.log("Record Video");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend :D");
+    break;
+  default:
+    console.log("Not a valid day");
+}
+
+if (day === "monday") {
+  console.log("Plan couse structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write Code Example");
+} else if (day === "friday") {
+  console.log("Record Video");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend :D");
+} else {
+  console.log("Not a valid day!!");
+}
+*/
+
+/*
+// Statement and Exression
+3 + 4;
+1991;
+true && false && !false;
+
+if (23 > 10) {
+  const str = "23 is bigger";
+}
+
+const me = "Ram";
+console.log(`I'm ${2037 - 1991} years old ${me}`);
+*/
+
+/*
+// Ternary Operator
+
+const age = 23;
+// age >= 18
+//   ? console.log("I like to deink wine 🍷")
+//   : console.log("I like to drink water 💧");
+
+const drink = age >= 18 ? "wine 🍷" : "water 💧";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine 🍷";
+} else {
+  drink2 = "water 💧";
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
+*/
