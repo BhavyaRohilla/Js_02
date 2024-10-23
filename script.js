@@ -355,3 +355,66 @@ console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
 */
+
+// console.log("18" === 18);
+// console.log("18" == 18);
+
+///////////////////////////////////////
+// Coding Challenge #1
+/*
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / heightJohn ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+console.log(BMIMark, BMIJohn, markHigherBMI);
+*/
+
+// Coding Chllenges #2
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / heightJohn ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+console.log(BMIMark, BMIJohn);
+
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})`);
+} else {
+  console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+}
+
+// Challenge #3
+const scoreDolphin = (97 + 112 + 101) / 3;
+const scoreKoalas = (109 + 95 + 106) / 3;
+console.log(scoreDolphin, scoreKoalas);
+
+if (scoreDolphin > scoreKoalas && scoreDolphin >= 100) {
+  console.log("Dolphins Wins the trophy!!!");
+} else if (scoreKoalas > scoreDolphin && scoreKoalas >= 100) {
+  console.log("Koalas Wins the trophy!!!");
+} else if (
+  scoreDolphin === scoreKoalas &&
+  scoreDolphin >= 100 &&
+  scoreKoalas >= 100
+) {
+  console.log("Both Wins the Trophy!!!!!!!");
+} else {
+  console.log("No one wins the trophy");
+}
+
+// Challenge 4
+
+const bill = 40;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value is ${
+    bill + tip
+  }`
+);
