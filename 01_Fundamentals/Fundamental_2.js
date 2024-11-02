@@ -191,7 +191,7 @@ if (friends.includes("Steven")) {
   console.log("You have a friend called Steven");
 }
 
-*/
+
 //////////////////////////////////////
 // Objects
 
@@ -224,13 +224,13 @@ console.log(bhavya["last" + nameKey]);
 // const InterestedIn = prompt(
 //   "What do you want to know about Bhavya? choose between firstName, lastName, age, job, and friends"
 // );
-if (bhavya[InterestedIn]) {
-  console.log(bhavya[InterestedIn]);
-} else {
-  console.log(
-    "Wrong request! Choose Between firstName, lastName, age, job, and friends"
-  );
-}
+// if (bhavya[InterestedIn]) {
+//   console.log(bhavya[InterestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose Between firstName, lastName, age, job, and friends"
+//   );
+// }
 
 bhavya.location = "Haryana";
 bhavya["instagram"] = "Nope";
@@ -238,3 +238,114 @@ console.log(bhavya);
 
 // Challenge
 // (Bhavya) has (3) friends, and his best friend is called (Micheal)
+
+console.log(
+  `${bhavya.firstName} has ${bhavya.friends.length} friends, and his best friend is called ${bhavya.friends[0]}`
+);
+*/
+
+////////////////////////////////////////////////////////
+// Day - 7
+/*
+const sneha = {
+  firstName: "Sneha",
+  lastName: "Dhingra",
+  birthYear: 2005,
+  job: "Student",
+  friend: ["Lucky", "Muskan", "Komal"],
+  hasDriverLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2024 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   console.log(this);
+  //   return 2024 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+};
+
+console.log(sneha.calcAge());
+// console.log(sneha["calcAge"](2009));
+
+// Challenge
+// "Sneha is a 19-year old student, and she has a driver's license"
+// Using object method or function
+
+
+////////////////////////////////////
+// Iteration_The for loop
+
+// console.log("Lifting weight repitition 1 🏋️");
+// console.log("Lifting weight repitition 2 🏋️");
+// console.log("Lifting weight repitition 3 🏋️");
+// console.log("Lifting weight repitition 4 🏋️");
+// console.log("Lifting weight repitition 5 🏋️");
+// console.log("Lifting weight repitition 6 🏋️");
+// console.log("Lifting weight repitition 7 🏋️");
+// console.log("Lifting weight repitition 8 🏋️");
+// console.log("Lifting weight repitition 9 🏋️");
+// console.log("Lifting weight repitition 10 🏋️");
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 30; rep = rep + 1) {
+  console.log(`Lifting weight repitition ${rep} 🏋️`);
+}
+
+
+/////////////////////////////////////
+// Looping Array
+const bhavyaArray = [
+  "Bhavya",
+  "Rohilla",
+  2024 - 2001,
+  "teacher",
+  ["Micheal", "Peter", "Steven"],
+];
+
+const types = [];
+
+for (let i = 0; i < bhavyaArray.length; i++) {
+  console.log(bhavyaArray[i], typeof bhavyaArray[i]);
+
+  // Filling types array
+  // types[i] = typeof bhavyaArray[i];
+  types.push(typeof bhavyaArray[i]);
+}
+
+console.log(types);
+
+// Continue and Break
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < bhavyaArray.length; i++) {
+  if (typeof bhavyaArray[i] !== "string") continue;
+
+  console.log(bhavyaArray[i], typeof bhavyaArray[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < bhavyaArray.length; i++) {
+  if (typeof bhavyaArray[i] === "number") break;
+
+  console.log(bhavyaArray[i], typeof bhavyaArray[i]);
+}
+
+
+///////////////////////////////////////////
+// While Loop
+
+for (let rep = 1; rep <= 30; rep = rep + 1) {
+  console.log(`Lifting weight repitition ${rep} 🏋️`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifting weight repitition ${rep} 🏋️`);
+  rep++;
+}
+*/
