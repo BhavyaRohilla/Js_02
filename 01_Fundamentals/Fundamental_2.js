@@ -349,3 +349,7 @@ while (rep <= 10) {
   rep++;
 }
 */
+
+const abc = {
+  ab: 12,
+};
